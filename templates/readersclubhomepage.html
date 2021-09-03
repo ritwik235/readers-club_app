@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            grid-template-rows: 50px 1fr 1fr 1fr;
+            background-color: lightblue;
+    
+            height: 100vh;
+            gap: 10px;            
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .members{
+            border: black solid 5px;
+            grid-area: 2/1/6/2;
+            background-color:rgb(0, 191, 255);
+        }
+        .info{
+            border: black solid 5px;
+            grid-area: 2/2/3/3;
+            background-color:rgb(0, 191, 255);
+        }
+        .leaderboard{
+            border: black solid 5px;
+            grid-area:2/3/6/4 ;
+            background-color:rgb(0, 191, 255);
+        }
+        .suggested_books{
+            border: solid black 5px;
+            grid-area: 3/2/5/3;
+            background-color: rgb(0, 191, 255);
+        }
+        .nav{
+            grid-column: 1/4;
+            
+            }
+            nav{
+                background-color: rgb(0, 139, 160);
+            }
+            nav ul{
+                display: flex;
+                list-style-type: none;
+                justify-content: space-around;
+            }
+            nav a{
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: sans-serif;
+                color: #24f7ec;    
+            }
+            nav ul li{
+                padding: 10px;                
+            }
+            
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="nav">
+   
+        <nav>
+            <ul>
+                <li><a href="./index.html"><i class="fas fa-home"></i>home </a></li>
+                <li><a href="./abouttheschool.html"><i class="fas fa-school"></i>about the school</a></li>
+                <li><a href="./access_library.html"><i class="fas fa-book-open"></i>How to acess the readers club<i class="fas fa-book-open"></i></a></li>
+            </ul>
+        </nav>
+    </div>       
+       <div class="members">
+        <div class="members">
+            <a href="./members list.html"><button>members</button></a>               
+        </div>
+       </div>
+       <div class="info">
+           <h2>Now that you have signed in you can check which batch you are in, in the member’s list. Every once in a week you can come to this site and enter the number of pages read by you in that week and enter the number in the bottom right side. A leader board will be there above showing the top five people.</h2>
+       </div>
+       <div class="suggested_books">
+           <h1>Suggested books</h1>
+       </div>
+       <div class="leaderboard">
+
+       </div>
+   </div> 
+</body>
+</html>
